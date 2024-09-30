@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
+    
 </head>
 <body>
     <form action="post" name="formulaire">
-        <input type="text" name="nom">
+        <h1>Formulaire de contact</h1>
+        Nom: <input type="text" name="nom" placeholder="dubois" pattern="[a-z]"><br>
+        Prénom: <input type="text" name="prenom" placeholder="charle-henri"><br>
+        Email: <input type="email" name="email" placeholder="dupons&dupond@tintin.com"><br>
+        Adresse: <input type="text" name="adresse" placeholder="26 rue des lilas"><br>
+        Ville: <input type="text" name="ville" placeholder="hiroshima"><br>
+        Code-postal: <input type="text" name="CP" pattern="[0-9]{5}" placeholder="34000"><br>
+        Numéro: <input type="tel" name="telephone" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="01-23-45-67-89"><br>
+        Commentaire: <br> <textarea name="comms" id="comms"></textarea><br>
+<input type="button" name="valider" value="valider"> 
     </form>
 </body>
 </html>
